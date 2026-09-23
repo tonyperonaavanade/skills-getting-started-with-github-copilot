@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activityCard.className = "activity-card";
 
         const spotsLeft = details.max_participants - details.participants.length;
-        const participantList = details.participants.length
+        const participantInfoList = details.participants.length
           ? `<ul>${details.participants
               .map(
                 (participant) => `
@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${details.description}</p>
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
-          <div class="participants-section">
+          <div class="participantinfo-section">
             <h5>Participants</h5>
-            ${participantList}
+            ${participantInfoList}
           </div>
         `;
 
