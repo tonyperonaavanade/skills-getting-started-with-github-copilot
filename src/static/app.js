@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${details.description}</p>
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
-          <div class="participants-section">
+          <div class="participantinfo-section">
             <h5>Participants</h5>
             ${participantInfoList}
           </div>
